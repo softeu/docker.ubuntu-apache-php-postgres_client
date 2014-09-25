@@ -4,7 +4,7 @@ RUN echo "1.565.1" > .lts-version-number
 
 RUN apt-get update && apt-get install -y wget git curl zip vim
 RUN apt-get update && apt-get install -y apache2 php5 php5-pgsql
-
+RUN apt-get update && apt-get install -y php5-intl imagemagick
 
 RUN usermod -U www-data && chsh -s /bin/bash www-data
 
