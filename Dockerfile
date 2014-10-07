@@ -17,7 +17,7 @@ RUN a2enmod rewrite
 
 #USER www-data
 
-VOLUME ["/var/www/html", "/var/log/apache2" ]
+#VOLUME ["/var/www/html", "/var/log/apache2" ]
 ENV SERVER_NAME docker-apache-php
 
 
